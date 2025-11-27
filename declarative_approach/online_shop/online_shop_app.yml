@@ -6,12 +6,12 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/LondheShubham153/argocd-demos.git    # Replace it with your forked repo
+    repoURL: https://github.com/zohaib-fastn/argocd-demos.git    # Replace it with your forked repo
     targetRevision: main
     path: declarative_approach/online_shop
   destination:
-    server: https://172.31.6.84:33893   # Replace with your Cluster Url, To get run: `argocd cluster list`
-    namespace: default
+    server: https://7855293A32375B449F38B27FD45B84A4.gr7.us-east-1.eks.amazonaws.com   # Replace with your Cluster Url, To get run: `argocd cluster list`
+    namespace: argo-apps
   syncPolicy:
     automated:
       prune: true
